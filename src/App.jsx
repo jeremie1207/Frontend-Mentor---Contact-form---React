@@ -224,7 +224,7 @@ function App() {
 
             {/* Require field descripition */}
             <p className='visually-hidden' aria-hidden="true" id="required-description">
-              <span aria-hidden="true" class="required">*</span>Required field
+              <span aria-hidden="true" className="required">*</span>Required field
             </p>
 
             <button type="submit">Submit</button>
