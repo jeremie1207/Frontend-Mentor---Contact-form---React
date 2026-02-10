@@ -1,5 +1,5 @@
-import validators from "../validators";
-import validateForm from "../validateForm";
+import validators from "../Utils/validators";
+import validateForm from "../Utils/validateForm";
 import { useState } from "react";
 
 export default function ContactForm() {
