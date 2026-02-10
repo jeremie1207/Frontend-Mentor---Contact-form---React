@@ -29,7 +29,8 @@ function validateQueryType(value) {
 }
 
 function validateConsent(value) {
-  if (!value) return "To submit this form, please consent to being contacted";
+  if (value !== true)
+    return "To submit this form, please consent to being contacted";
   return "";
 }
 
@@ -40,7 +41,7 @@ function App() {
     email: "",
     queryType: "",
     message: "",
-    consent: "",
+    consent: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -75,23 +76,6 @@ function App() {
       ...prevFormData,
       [name]: type === "checkbox" ? checked : value,
     }));
-
-    if (name === "queryType") {
-      const error = validateQueryType(value);
-      setErrors((prev) => ({
-        ...prev,
-        queryType: error,
-      }));
-    }
-
-    if (name === "consent") {
-      console.log("consent");
-      const error = validateConsent(value);
-      setErrors((prev) => ({
-        ...prev,
-        consent: error,
-      }));
-    }
   }
 
   function handleBlur(event) {
