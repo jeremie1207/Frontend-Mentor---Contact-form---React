@@ -40,7 +40,7 @@ function App() {
     email: "",
     queryType: "",
     message: "",
-    consent: false,
+    consent: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -51,12 +51,10 @@ function App() {
     const newError = {};
 
     Object.keys(formData).forEach((field) => {
-      let error;
+      let error = "";
       if (field === "queryType") {
         error = validateQueryType(formData[field]);
-      }
-
-      if (field === "consent") {
+      } else if (field === "consent") {
         error = validateConsent(formData[field]);
       } else {
         error = validateField(field, formData[field]);
@@ -217,7 +215,6 @@ function App() {
                     value="General Enquiry"
                     checked={formData.queryType === "General Enquiry"}
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     id="generalEnquiry"
                   />
                   <label htmlFor="generalEnquiry">General Enquiry</label>
@@ -232,7 +229,6 @@ function App() {
                     value="Support Request"
                     checked={formData.queryType === "Support Request"}
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     id="supportRequest"
                   />
                   <label htmlFor="supportRequest">Support Request</label>
@@ -244,8 +240,6 @@ function App() {
                   {errors.queryType}
                 </p>
               )}
-
-              {console.log(errors)}
             </fieldset>
 
             {/* message */}
@@ -285,7 +279,6 @@ function App() {
                 name="consent"
                 id="consent"
                 onChange={handleChange}
-                onBlur={handleBlur}
                 value={formData.consent}
               />
               <label htmlFor="consent">
