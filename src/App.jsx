@@ -6,10 +6,7 @@ function App() {
   return (
     <>
       <main>
-        <article className="form-container">
-          <h1 className="form-title">Contact Us</h1>
-          <ContactForm />
-        </article>
+        <ContactForm />
       </main>
       <Footer />
     </>
