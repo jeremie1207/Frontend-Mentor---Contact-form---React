@@ -1,5 +1,6 @@
 import "./App.css";
 import ContactForm from "./Component/ContactForm";
+import { Footer } from "./Component/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <ContactForm />
         </article>
       </main>
+      <Footer />
     </>
   );
 }

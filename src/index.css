@@ -1,82 +1,82 @@
 :root {
-   
-    /* colors */
+  /* colors */
 
-    /* color primary */
-    --color-green-200 : hsl(148, 38%, 91%);
-    --color-green-600 : hsl(169, 82%, 27%);
-    --color-green-600a: hsla(169, 82%, 27%, 0.5);
-    --color-red: hsl(0, 66%, 54%);
+  /* color primary */
+  --color-green-200: hsl(148, 38%, 91%);
+  --color-green-600: hsl(169, 82%, 27%);
+  --color-green-600a: hsla(169, 82%, 27%, 0.5);
+  --color-red: hsl(0, 66%, 54%);
 
-    /* color neutral */
-    --color-white: hsl(0, 0%, 100%);
-    --color-grey-500 : hsl(186, 15%, 59%);
-    --color-grey-900 : hsl(187, 24%, 22%);
+  /* color neutral */
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-500: hsl(186, 15%, 59%);
+  --color-grey-900: hsl(187, 24%, 22%);
 
-    /* typography */
+  /* typography */
 
-    --ff-karla : "Karla", sans-serif;
-    --fw-400 : 400;
-    --fw-700: 700;
+  --ff-karla: "Karla", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
 
-    --fw-regular : var(--fw-400);
-    --fw-bold: var(--fw-700);
+  --fw-regular: var(--fw-400);
+  --fw-bold: var(--fw-700);
 
-    --fs-200: 1rem;
-    --fs-250: 1.125rem; 
-    --fs-400: 2rem;
+  --fs-200: 1rem;
+  --fs-250: 1.125rem;
+  --fs-400: 2rem;
 
-    --color-text-body: var(--color-grey-900);
-    --color-text-required: var(--color-green-600);
-    --color-text-error: var(--color-red);
+  --color-text-body: var(--color-grey-900);
+  --color-text-required: var(--color-green-600);
+  --color-text-error: var(--color-red);
 
+  --text-heading-size: var(--fs-400);
+  --text-heading-lh: 100%;
+  --text-heading-letter-spacing: -1px;
+  --text-heading-fw: var(--fw-bold);
+  --text-color-heading: var(--color-grey-900);
 
-    --text-heading-size: var(--fs-400);
-    --text-heading-lh: 100%;
-    --text-heading-letter-spacing: -1px;
-    --text-heading-fw: var(--fw-bold);
-    --text-color-heading: var(--color-grey-900);
+  --text-body-bold-md-size: var(--fs-250);
+  --text-body-bold-md-lh: 150%;
+  --text-body-bold-md-letter-spacing: 0px;
+  --text-body-bold-fw: var(--fw-bold);
 
-    --text-body-bold-md-size: var(--fs-250);
-    --text-body-bold-md-lh: 150%;
-    --text-body-bold-md-letter-spacing: 0px;
-    --text-body-bold-fw: var(--fw-bold); 
+  --text-body-regular-md-size: var(--fs-250);
+  --text-body-regular-md-lh: 150%;
+  --text-body-regular-md-letter-spacing: 0px;
+  --text-body-regular-fw: var(--fw-regular);
 
-    --text-body-regular-md-size: var(--fs-250);
-    --text-body-regular-md-lh: 150%;
-    --text-body-regular-md-letter-spacing: 0px;
-    --text-body-regular-fw: var(--fw-regular);
+  --text-body-regular-sm-size: var(--fs-200);
+  --text-body-regular-sm-lh: 150%;
+  --text-body-regular-sm-letter-spacing: 0px;
+  --text-body-regular-fw: var(--fw-regular);
 
-    --text-body-regular-sm-size: var(--fs-200);
-    --text-body-regular-sm-lh: 150%;
-    --text-body-regular-sm-letter-spacing: 0px;
-    --text-body-regular-fw: var(--fw-regular);
+  /* button */
+  --button-bg-color: var(--color-green-600);
+  --button-bg-color-hover: var(--color-green-600a);
+  --button-text-color: var(--color-white);
 
-    /* button */
-    --button-bg-color: var(--color-green-600);
-    --button-bg-color-hover: var(--color-green-600a);
-    --button-text-color: var(--color-white);
+  /* input */
+  --border-color-input: var(--color-grey-500);
+  --border-color-input-invalid: var(--color-red);
 
-    /* input */
-    --border-color-input : var(--color-grey-500);
-    --border-color-input-invalid: var(--color-red);
+  /* spacing */
+  --space-100: 0.5rem;
+  --space-150: 0.75rem;
+  --space-200: 1rem;
+  --space-300: 1.5rem;
+  --space-400: 2rem;
+  --space-500: 2.5rem;
+  --space-1600: 8rem;
 
-    /* spacing */
-    --space-100: 0.5rem;
-    --space-150: 0.75rem;
-    --space-200: 1rem;
-    --space-300: 1.5rem;
-    --space-400: 2rem;
-    --space-500: 2.5rem;
-    --space-1600: 8rem;
-
-    /* background */
-    --body-bg-color: var(--color-green-200);
-    --form-container-bg: var(--color-white);
+  /* background */
+  --body-bg-color: var(--color-green-200);
+  --form-container-bg: var(--color-white);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -104,18 +104,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -123,21 +136,49 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  min-block-size: 100vh;
 }
 
 /* utilities */
 
+.attribution {
+  text-align: center;
+}
+
+.form-container {
+  background-color: var(--form-container-bg);
+  padding: clamp(1.5rem, calc(1.136rem + 1.818vw), 2.5rem);
+  border-radius: 1rem;
+}
+
 .visually-hidden {
- position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- white-space: nowrap;
- clip-path: inset(50%);
- clip: rect(0 0 0 0);
- overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

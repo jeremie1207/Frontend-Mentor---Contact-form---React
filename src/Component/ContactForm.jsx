@@ -51,7 +51,7 @@ export default function ContactForm() {
   return (
     <form action="" className="form" onSubmit={handleSubmit}>
       {/* first name */}
-      <div className="control">
+      <div className="text-field">
         <label htmlFor="firstName">
           First Name{" "}
           <span aria-hidden="true" className="required">
@@ -79,7 +79,7 @@ export default function ContactForm() {
       </div>
 
       {/* last name */}
-      <div className="control">
+      <div className="text-field">
         <label htmlFor="lastName">
           Last Name{" "}
           <span aria-hidden="true" className="required">
@@ -107,7 +107,7 @@ export default function ContactForm() {
       </div>
 
       {/* email */}
-      <div className="control">
+      <div className="text-field">
         <label htmlFor="email">
           Email Address{" "}
           <span aria-hidden="true" className="required">
@@ -181,7 +181,7 @@ export default function ContactForm() {
       </fieldset>
 
       {/* message */}
-      <div className="control">
+      <div className="text-field">
         <label htmlFor="message">
           Message{" "}
           <span aria-hidden="true" className="required">
@@ -208,7 +208,7 @@ export default function ContactForm() {
 
       {/* consent */}
 
-      <div className="control">
+      <div className="text-field">
         <input
           //required
           aria-describedby="required-description"
