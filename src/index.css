@@ -43,12 +43,10 @@
   --text-body-regular-md-size: var(--fs-250);
   --text-body-regular-md-lh: 150%;
   --text-body-regular-md-letter-spacing: 0px;
-  --text-body-regular-fw: var(--fw-regular);
 
   --text-body-regular-sm-size: var(--fs-200);
   --text-body-regular-sm-lh: 150%;
   --text-body-regular-sm-letter-spacing: 0px;
-  --text-body-regular-fw: var(--fw-regular);
 
   /* button */
   --button-bg-color: var(--color-green-600);
@@ -95,10 +93,11 @@
 body {
   background-color: var(--body-bg-color);
   color: var(--color-text-body);
-  font-size: var(--fs-200);
+  font-size: var(--text-body-regular-sm-size);
+  font-weight: var(--fw-regular);
+  line-height: var(--text-body-regular-sm-lh);
   font-family: var(--ff-karla);
-  /* 4. Add accessible line-height */
-  line-height: 150%;
+  letter-spacing: var(--text-body-regular-sm-letter-spacing);
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
@@ -181,4 +180,14 @@ main {
   clip-path: inset(50%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.radio-item label {
+  font-size: var(--text-body-regular-md-size);
+  line-height: var(--text-body-regular-md-lh);
+  letter-spacing: var(--text-body-regular-md-letter-spacing);
+}
+
+.error-message {
+  color: var(--color-text-error);
 }
