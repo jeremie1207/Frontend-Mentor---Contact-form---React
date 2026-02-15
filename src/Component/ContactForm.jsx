@@ -205,6 +205,7 @@ export default function ContactForm() {
                 onBlur={handleBlur}
                 value={formData.message}
                 id="message"
+                rows="4"
               ></textarea>
               {errors.message && (
                 <p role="alert" className="error-message">

@@ -280,6 +280,10 @@ button:focus-visible {
   margin-inline-start: var(--space-150);
 }
 
+.checkbox * + * {
+  margin-inline-start: var(--space-150);
+}
+
 input[aria-invalid="true"],
 textarea[aria-invalid="true"] {
   border: 1px solid var(--border-color-input-invalid);
@@ -288,4 +292,8 @@ textarea[aria-invalid="true"] {
 input[type="radio"],
 input[type="checkbox"] {
   accent-color: var(--color-green-600);
+}
+
+textarea {
+  resize: none;
 }
