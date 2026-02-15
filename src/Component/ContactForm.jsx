@@ -111,7 +111,7 @@ export default function ContactForm() {
             </div>
 
             {/* email */}
-            <div className="text-field">
+            <div className="text-field span-2">
               <label htmlFor="email">
                 Email Address{" "}
                 <span aria-hidden="true" className="required">
@@ -139,7 +139,10 @@ export default function ContactForm() {
             </div>
 
             {/* query type */}
-            <fieldset aria-invalid={Boolean(errors.queryType)}>
+            <fieldset
+              className="span-2"
+              aria-invalid={Boolean(errors.queryType)}
+            >
               <legend>
                 Query Type{" "}
                 <span aria-hidden="true" className="required">
@@ -185,7 +188,7 @@ export default function ContactForm() {
             </fieldset>
 
             {/* message */}
-            <div className="text-field">
+            <div className="text-field span-2">
               <label htmlFor="message">
                 Message{" "}
                 <span aria-hidden="true" className="required">

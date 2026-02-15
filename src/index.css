@@ -4,7 +4,6 @@
   /* color primary */
   --color-green-200: hsl(148, 38%, 91%);
   --color-green-600: hsl(169, 82%, 27%);
-  --color-green-600a: hsla(169, 82%, 27%, 0.5);
   --color-red: hsl(0, 66%, 54%);
 
   /* color neutral */
@@ -52,6 +51,10 @@
   --button-bg-color: var(--color-green-600);
   --button-bg-color-hover: var(--color-green-600a);
   --button-text-color: var(--color-white);
+  --button-text-size: var(--text-body-bold-md-size);
+  --button-text-lh: var(--text-body-bold-md-lh);
+  --button-text-letter-spacing: var(--text-body-bold-md-letter-spacing);
+  --button-text-fw: var(--text-body-bold-fw);
 
   /* input */
   --border-color-input: var(--color-grey-500);
@@ -169,6 +172,16 @@ main {
   border-radius: 1rem;
 }
 
+.form {
+  display: grid;
+  gap: var(--space-500);
+}
+
+.form-content {
+  display: grid;
+  gap: var(--space-400);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -199,7 +212,80 @@ textarea {
   padding: 0.75rem 1.5rem;
 }
 
+button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  font-size: var(--button-text-size);
+  line-height: var(--button-text-lh);
+  letter-spacing: var(--button-text-letter-spacing);
+  font-weight: var(--button-text-fw);
+}
+
+button:hover,
+button:focus-visible {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--color-green-600);
+}
+
+.fields {
+  display: grid;
+  gap: var(--space-150);
+}
+
+.fields > * {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .span-2 {
+    grid-column: 1 / -1;
+  }
+}
+
+.radio-group {
+  display: grid;
+  gap: var(--space-100);
+}
+
+@media (min-width: 768px) {
+  .radio-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.radio-item {
+  border: 1px solid var(--border-color-input);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--space-100);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-item:hover {
+  background-color: var(--color-green-200);
+}
+
+.radio-item * + * {
+  margin-inline-start: var(--space-150);
+}
+
 input[aria-invalid="true"],
 textarea[aria-invalid="true"] {
   border: 1px solid var(--border-color-input-invalid);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--color-green-600);
 }
