@@ -203,6 +203,7 @@ main {
 
 .error-message {
   color: var(--color-text-error);
+  margin-block-start: var(--space-100);
 }
 
 input,
