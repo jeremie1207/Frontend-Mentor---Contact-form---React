@@ -151,7 +151,7 @@ export default function ContactForm() {
                 </span>
               </legend>
               <section className="radio-group">
-                <div className="radio-item">
+                <div className={`radio-item ${formData.queryType === "General Enquiry" && "select-item"}`}>
                   <input
                     //required
                     aria-describedby="required-description"
@@ -165,7 +165,7 @@ export default function ContactForm() {
                   <label htmlFor="generalEnquiry">General Enquiry</label>
                 </div>
 
-                <div className="radio-item">
+                <div className={`radio-item ${formData.queryType === "Support Request" && "select-item"}`}>
                   <input
                     //required
                     aria-describedby="required-description"
