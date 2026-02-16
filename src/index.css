@@ -211,6 +211,7 @@ textarea {
   border: 1px solid var(--border-color-input);
   border-radius: var(--space-100);
   padding: 0.75rem 1.5rem;
+  cursor: pointer;
 }
 
 button {
@@ -273,7 +274,7 @@ button:focus-visible {
   cursor: pointer;
 }
 
-.radio-item:hover {
+.select-item {
   background-color: var(--color-green-200);
 }
 
