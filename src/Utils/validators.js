@@ -32,7 +32,7 @@ const validators = {
   },
 
   consent: (value) => {
-    if (value !== true) return "You must consent to be contacted";
+    if (value !== true) return "To submit this form, please consent to being contacted";
     return "";
   },
 };
