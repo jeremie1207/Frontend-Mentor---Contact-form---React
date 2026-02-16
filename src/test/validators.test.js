@@ -91,12 +91,12 @@ describe("validators", () => {
   describe("consent", () => {
     it("returns error if false", () => {
       const result = validators.consent(false);
-      expect(result).toBe("You must consent to be contacted");
+      expect(result).toBe("To submit this form, please consent to being contacted");
     });
 
     it("returns error if undefined", () => {
       const result = validators.consent(undefined);
-      expect(result).toBe("You must consent to be contacted");
+      expect(result).toBe("To submit this form, please consent to being contacted");
     });
 
     it("returns empty string if true", () => {
