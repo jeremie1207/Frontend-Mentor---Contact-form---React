@@ -20,7 +20,7 @@ describe("validateForm", () => {
       email: "Please enter a valid email address",
       queryType: "Please select a query type",
       message: "Message must be at least 10 characters",
-      consent: "You must consent to be contacted",
+      consent: "To submit this form, please consent to being contacted",
     });
   });
 
