@@ -4,3 +4,35 @@ main {
   place-items: center;
   min-block-size: 100vh;
 }
+
+.success-message__container {
+  width: fit-content;
+  background-color: var(--color-grey-900);
+  color: var(--color-white);
+  padding: var(--space-300);
+  border-radius: var(--space-200)
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+.success-message__title-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.success_message-title {
+  font-family: var(--ff-karla);
+  font-size: var(--text-body-bold-md-size);
+  line-height: var(--text-body-bold-md-lh);
+  letter-spacing: var(--text-body-bold-md-letter-spacing);
+  font-weight: var(--text-body-bold-fw);
+}
+
+.success-message p {
+  color: var(--color-green-200);
+}
