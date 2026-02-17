@@ -1,0 +1,134 @@
+.form-container {
+  background-color: var(--form-container-bg);
+  padding: clamp(1.5rem, calc(1.136rem + 1.818vw), 2.5rem);
+  border-radius: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: var(--space-500);
+}
+
+.form-content {
+  display: grid;
+  gap: var(--space-400);
+}
+
+.radio-item label {
+  font-size: var(--text-body-regular-md-size);
+  line-height: var(--text-body-regular-md-lh);
+  letter-spacing: var(--text-body-regular-md-letter-spacing);
+}
+
+.error-message {
+  color: var(--color-text-error);
+}
+
+input,
+textarea {
+  border: 1px solid var(--border-color-input);
+  border-radius: var(--space-100);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  font-size: var(--button-text-size);
+  line-height: var(--button-text-lh);
+  letter-spacing: var(--button-text-letter-spacing);
+  font-weight: var(--button-text-fw);
+}
+
+button:hover,
+button:focus-visible {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--color-green-600);
+}
+
+.fields {
+  display: grid;
+  gap: var(--space-150);
+}
+
+.fields > * {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+@media (min-width: 48rem) {
+  .fields {
+    grid-template-columns: 1fr 1fr;
+  }
+  .span-2 {
+    grid-column: 1 / -1;
+  }
+}
+
+.radio-group {
+  display: grid;
+  gap: var(--space-100);
+  margin-block-start: var(--space-100);
+}
+
+@media (min-width: 48rem) {
+  .radio-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.radio-item {
+  border: 1px solid var(--border-color-input);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--space-100);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-item * + * {
+  margin-inline-start: var(--space-150);
+}
+
+.checkbox * + * {
+  margin-inline-start: var(--space-150);
+}
+
+textarea {
+  resize: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border: 1px solid var(--border-color-input-invalid);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--color-green-600);
+}
+
+.select-item {
+  background-color: var(--color-green-200);
+}

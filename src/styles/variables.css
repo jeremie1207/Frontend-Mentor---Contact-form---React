@@ -1,0 +1,75 @@
+:root {
+  /* colors */
+
+  /* color primary */
+  --color-green-200: hsl(148, 38%, 91%);
+  --color-green-600: hsl(169, 82%, 27%);
+  --color-red: hsl(0, 66%, 54%);
+
+  /* color neutral */
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-500: hsl(186, 15%, 59%);
+  --color-grey-900: hsl(187, 24%, 22%);
+
+  /* typography */
+
+  --ff-karla: "Karla", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --fw-regular: var(--fw-400);
+  --fw-bold: var(--fw-700);
+
+  --fs-200: 1rem;
+  --fs-250: 1.125rem;
+  --fs-400: 2rem;
+
+  --color-text-body: var(--color-grey-900);
+  --color-text-required: var(--color-green-600);
+  --color-text-error: var(--color-red);
+
+  --text-heading-size: var(--fs-400);
+  --text-heading-lh: 100%;
+  --text-heading-letter-spacing: -1px;
+  --text-heading-fw: var(--fw-bold);
+  --text-color-heading: var(--color-grey-900);
+
+  --text-body-bold-md-size: var(--fs-250);
+  --text-body-bold-md-lh: 150%;
+  --text-body-bold-md-letter-spacing: 0px;
+  --text-body-bold-fw: var(--fw-bold);
+
+  --text-body-regular-md-size: var(--fs-250);
+  --text-body-regular-md-lh: 150%;
+  --text-body-regular-md-letter-spacing: 0px;
+
+  --text-body-regular-sm-size: var(--fs-200);
+  --text-body-regular-sm-lh: 150%;
+  --text-body-regular-sm-letter-spacing: 0px;
+
+  /* button */
+  --button-bg-color: var(--color-green-600);
+  --button-bg-color-hover: var(--color-green-600a);
+  --button-text-color: var(--color-white);
+  --button-text-size: var(--text-body-bold-md-size);
+  --button-text-lh: var(--text-body-bold-md-lh);
+  --button-text-letter-spacing: var(--text-body-bold-md-letter-spacing);
+  --button-text-fw: var(--text-body-bold-fw);
+
+  /* input */
+  --border-color-input: var(--color-grey-500);
+  --border-color-input-invalid: var(--color-red);
+
+  /* spacing */
+  --space-100: 0.5rem;
+  --space-150: 0.75rem;
+  --space-200: 1rem;
+  --space-300: 1.5rem;
+  --space-400: 2rem;
+  --space-500: 2.5rem;
+  --space-1600: 8rem;
+
+  /* background */
+  --body-bg-color: var(--color-green-200);
+  --form-container-bg: var(--color-white);
+}

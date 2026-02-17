@@ -1,1 +1,6 @@
-
+main {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  min-block-size: 100vh;
+}

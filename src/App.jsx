@@ -1,6 +1,6 @@
 import "./App.css";
-import ContactForm from "./Component/ContactForm";
-import { Footer } from "./Component/Footer";
+import ContactForm from "./Component/ContactForm/ContactForm";
+import { Footer } from "./Component/Footer/Footer";
 
 function App() {
   return (
