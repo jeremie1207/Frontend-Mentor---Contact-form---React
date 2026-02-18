@@ -6,11 +6,30 @@ main {
 }
 
 .success-message__container {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
   width: fit-content;
   background-color: var(--color-grey-900);
   color: var(--color-white);
   padding: var(--space-300);
-  border-radius: var(--space-200)
+  border-radius: var(--space-200);
+  z-index: 9999;
+}
+
+.success-message__container[data-show="true"] {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 2.5rem; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {top: 2.5rem; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }
 
 .success-message {
