@@ -3,7 +3,7 @@ import validators from "../../Utils/validators";
 import validateForm from "../../Utils/validateForm";
 import { useState } from "react";
 
-export default function ContactForm() {
+export default function ContactForm({onSuccess}) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -24,6 +24,17 @@ export default function ContactForm() {
       setErrors(newErrors);
       return;
     }
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      queryType: "",
+      message: "",
+      consent: false,
+    })
+    setErrors({});
+    onSuccess();
   }
 
   function handleChange(event) {
