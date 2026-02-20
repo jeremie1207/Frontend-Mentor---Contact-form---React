@@ -243,7 +243,7 @@ export default function ContactForm({onSuccess}) {
             name="consent"
             id="consent"
             onChange={handleChange}
-            value={formData.consent}
+            checked={formData.consent}
           />
           <label htmlFor="consent">
             I consent to being contacted by the team{" "}
