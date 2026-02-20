@@ -23,13 +23,13 @@ main {
 }
 
 @keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 2.5rem; opacity: 1;}
+  from {top: 0; opacity: 0.5;}
+  to {top: 4rem; opacity: 1;}
 }
 
 @keyframes fadeout {
-  from {top: 2.5rem; opacity: 1;}
-  to {top: 0; opacity: 0;}
+  from {top: 4rem; opacity: 1;}
+  to {top: 0; opacity: 0.5;}
 }
 
 .success-message {
