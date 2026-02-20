@@ -1,111 +1,290 @@
-# Frontend Mentor - Contact form
+# Frontend Mentor – Contact Form (React)
+
+A modern, accessible contact form built with React, following best practices in UI/UX, accessibility (a11y), testing, and component architecture. This project is a solution to the **Frontend Mentor – Contact Form** challenge.
 
 ![Design preview for the Contact form coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+---
 
-Thanks for checking out this front-end coding challenge.
+## 📖 Overview
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+### Description
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+An accessible and responsive contact form that provides real-time validation, keyboard navigation support, screen reader compatibility, and user feedback through success notifications.
 
-## The challenge
+### Target Users
 
-Your challenge is to build out this contact form and get it looking as close to the design as possible. Pay particular attention to making this form accessible. Building accessible forms is a key skill for front-end developers. So this is a perfect challenge to practice.
+* Front-end developers
+* React learners
+* Accessibility-focused developers
+* UI/UX learners
+* Junior developers practicing real-world projects
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+---
 
-Your users should be able to: 
+## ✨ Features
 
-- Complete the form and see a success toast message upon successful submission
-- Receive form validation messages if:
-  - A required field has been missed
-  - The email address is not formatted correctly
-- Complete the form only using their keyboard
-- Have inputs, error messages, and the success message announced on their screen reader
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+* Accessible form inputs (ARIA support)
+* Keyboard-only navigation
+* Screen reader announcements
+* Real-time form validation
+* Email format validation
+* Required field validation
+* Success toast notification
+* Responsive layout (mobile & desktop)
+* Hover & focus states
+* Semantic HTML structure
+* Reusable React components
+* Clean UI architecture
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+---
 
-## Where to find everything
+## 🧱 Architecture
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+* **Architecture style:** Component-based architecture
+* **Design approach:** Atomic UI principles
+* **Structure:** Modular, reusable components
+* **Separation of concerns:** UI / logic / validation
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+---
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## 🧠 State Management
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+* React Hooks (`useState`)
+* Controlled components
+* Local component state
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+---
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## 🌐 Routing
 
-## Using AI coding assistants
+* None (Single-page application)
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+---
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+## 🔌 API Usage
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+* None (Client-side only)
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+---
 
-## Building your project
+## 🔐 Authentication
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+* None
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+---
 
-## Deploying your project
+## 🗄 Database
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+* None (Frontend-only project)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+---
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## 🧪 Testing
 
-## Create a custom `README.md`
+* **Framework:** Vitest
+* Unit tests for validation logic
+* Function-level testing
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+---
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## 🧰 Tech Stack
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+* **Framework:** React
+* **Build Tool:** Vite
+* **Styling:** CSS (custom properties, Flexbox, Grid)
+* **Testing:** Vitest
+* **Accessibility:** WCAG-aligned practices
+* **Language:** JavaScript (ES6+)
 
-## Submitting your solution
+---
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## 📁 Project Structure
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+```txt
+.
+├── assets/
+│   ├── fonts/
+│   ├── images/
+│   └── static/
+├── design/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── Component/
+│   │   ├── ContactForm/
+│   │   │   ├── ContactForm.css
+│   │   │   └── ContactForm.jsx
+│   │   └── Footer/
+│   │   │   ├── Footer.css
+│   │   │   └── Footer.jsx
+│   ├── styles/
+│   │   ├── reset.css
+│   │   └── variables.css
+│   ├── test/
+│   │   ├── validators.test.js
+│   │   └── validateForm.test.js
+│   ├── Utils/
+│   │   ├── validateForm.js
+│   │   └── validators.js
+│   ├── App.css
+│   ├── App.jsx
+│   └── main.jsx
+├── .gitignore
+├── AGENTS.md
+├── CLAUDE.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── style-guide.md
+├── vite.config.js
+└── README.md
+```
 
-## Sharing your solution
+---
 
-There are multiple places you can share your solution:
+## ⚙️ Environment Variables
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+None required.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+---
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+## 📜 Scripts
 
-## Got feedback for us?
+```bash
+npm run dev        # Start development server
+npm run build      # Build for production
+npm run preview    # Preview production build
+npm run test       # Run tests (Vitest)
+```
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+---
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+## 🚀 Setup & Installation
 
-**Have fun building!** 🚀
+### Prerequisites
+
+* Node.js ≥ 18
+* npm / yarn / pnpm
+
+### Installation
+
+```bash
+git clone https://github.com/jeremie1207/Frontend-Mentor---Contact-form---React.git
+cd Frontend-Mentor---Contact-form---React
+npm install
+```
+
+---
+
+## ▶️ Run Locally
+
+```bash
+npm run dev
+```
+
+App runs on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗 Build
+
+```bash
+npm run build
+```
+
+---
+
+## 🌍 Deployment
+
+**Platform:** Vercel
+
+```bash
+npm run build
+```
+
+Deploy the `dist/` folder.
+
+---
+
+## 🔗 Live Demo
+
+* **Repository:**
+  [https://github.com/jeremie1207/Frontend-Mentor---Contact-form---React](https://github.com/jeremie1207/Frontend-Mentor---Contact-form---React)
+
+* **Live Site:**
+  [https://frontend-mentor-contact-form-react.vercel.app/](https://frontend-mentor-contact-form-react.vercel.app/)
+
+---
+
+## 🖼 Screenshots
+
+```txt
+assets/images/contact-form-screenshot.png
+design/desktop-preview.jpg
+```
+
+---
+
+## 🧩 Testing Strategy
+
+* Unit tests for validation functions
+* Logic isolation
+* Input validation coverage
+* Error handling verification
+
+###
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👤 Author
+
+**Jeremie Barhabazi**
+Frontend Mentor: [https://www.frontendmentor.io/profile/jeremie1207](https://www.frontendmentor.io/profile/jeremie1207)
+
+---
+
+## 🎯 Learning Outcomes
+
+* React component architecture
+* Form handling with hooks
+* Accessibility-first development
+* UI validation patterns
+* Test-driven logic validation
+* Clean project structuring
+* Production-ready React workflow
+
+---
+
+## 🧠 AI Collaboration
+
+AI tools were used for:
+
+* Debugging
+* Code explanation
+* Architecture suggestions
+* Refactoring
+* Documentation structuring
+
+Tool used:
+
+* ChatGPT
+
+---
+
+## ⭐ Acknowledgments
+
+* Frontend Mentor community
+* Accessibility best-practice contributors
+* Open-source React ecosystem
