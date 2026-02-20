@@ -2,8 +2,6 @@
 
 A modern, accessible contact form built with React, following best practices in UI/UX, accessibility (a11y), testing, and component architecture. This project is a solution to the **Frontend Mentor – Contact Form** challenge.
 
-![Design preview for the Contact form coding challenge](./design/desktop-preview.jpg)
-
 ---
 
 ## 📖 Overview
@@ -118,6 +116,9 @@ An accessible and responsive contact form that provides real-time validation, ke
 │   │   └── Footer/
 │   │   │   ├── Footer.css
 │   │   │   └── Footer.jsx
+│   │   └── SuccessMessageToast/
+│   │   │   ├── SuccessMessageToast.css
+│   │   │   └── SuccessMessageToast.jsx
 │   ├── styles/
 │   │   ├── reset.css
 │   │   └── variables.css
