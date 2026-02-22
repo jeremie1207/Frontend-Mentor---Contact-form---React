@@ -129,6 +129,11 @@ input[type="checkbox"] {
   accent-color: var(--color-green-600);
 }
 
+:is(input, button, textarea):focus-visible {
+  outline: 3px solid var(--color-green-600);
+  outline-offset: 2px;
+}
+
 .select-item {
   background-color: var(--color-green-200);
 }
