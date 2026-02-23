@@ -76,9 +76,8 @@ export default function ContactForm({onSuccess}) {
                 </span>
               </label>
               <input
-                //required
-                aria-describedby="required-description"
-                aria-invalid={Boolean(errors.firstName)}
+                aria-required="true"
+                aria-invalid={errors.firstName ? 'true' : undefined}
                 type="text"
                 name="firstName"
                 id="firstName"
@@ -104,9 +103,8 @@ export default function ContactForm({onSuccess}) {
                 </span>
               </label>
               <input
-                //required
-                aria-describedby="required-description"
-                aria-invalid={Boolean(errors.lastName)}
+                aria-required="true"
+                aria-invalid={errors.lastName ? 'true' : undefined}
                 type="text"
                 name="lastName"
                 id="lastName"
@@ -132,9 +130,8 @@ export default function ContactForm({onSuccess}) {
                 </span>
               </label>
               <input
-                //required
-                aria-describedby="required-description"
-                aria-invalid={Boolean(errors.email)}
+                aria-required="true"
+                aria-invalid={errors.email ? 'true' : undefined}
                 type="email"
                 name="email"
                 id="email"
@@ -153,7 +150,7 @@ export default function ContactForm({onSuccess}) {
             {/* query type */}
             <fieldset
               className="span-2"
-              aria-invalid={Boolean(errors.queryType)}
+              aria-invalid={errors.queryType ? 'true' : undefined}
             >
               <legend>
                 Query Type{" "}
@@ -167,8 +164,7 @@ export default function ContactForm({onSuccess}) {
                   className={`radio-item ${formData.queryType === "General Enquiry" && "select-item"}`}
                 >
                   <input
-                    //required
-                    aria-describedby="required-description"
+                    aria-required="true"
                     type="radio"
                     name="queryType"
                     value="General Enquiry"
@@ -183,8 +179,7 @@ export default function ContactForm({onSuccess}) {
                   className={`radio-item ${formData.queryType === "Support Request" && "select-item"}`}
                 >
                   <input
-                    //required
-                    aria-describedby="required-description"
+                    aria-required="true"
                     type="radio"
                     name="queryType"
                     value="Support Request"
@@ -213,9 +208,8 @@ export default function ContactForm({onSuccess}) {
                 </span>
               </label>
               <textarea
-                //required
-                aria-describedby="required-description"
-                aria-invalid={Boolean(errors.message)}
+                aria-required="true"
+                aria-invalid={errors.message ? 'true' : undefined}
                 name="message"
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -236,9 +230,8 @@ export default function ContactForm({onSuccess}) {
 
         <section className="checkbox">
           <input
-            //required
-            aria-describedby="required-description"
-            aria-invalid={Boolean(errors.consent)}
+            aria-required="true"
+            aria-invalid={errors.consent ? 'true' : undefined}
             type="checkbox"
             name="consent"
             id="consent"
@@ -258,18 +251,6 @@ export default function ContactForm({onSuccess}) {
             </p>
           )}
         </section>
-
-        {/* Require field description */}
-        <p
-          className="visually-hidden"
-          aria-hidden="true"
-          id="required-description"
-        >
-          <span aria-hidden="true" className="required">
-            *
-          </span>
-          Required field
-        </p>
 
         <button type="submit">Submit</button>
       </form>
