@@ -86,11 +86,12 @@ export default function ContactForm({onSuccess}) {
                 onBlur={handleBlur}
                 autoComplete="given-name"
               />
-              {errors.firstName && (
-                <p role="alert" className="error-message">
-                  {errors.firstName}
-                </p>
-              )}
+              <p
+                className={`error-message ${errors.firstName ? "visible" : ""}`}
+                aria-live="polite"
+              >
+                {errors.firstName || " "}
+              </p>
             </div>
 
             {/* last name */}
@@ -113,11 +114,9 @@ export default function ContactForm({onSuccess}) {
                 onBlur={handleBlur}
                 autoComplete="family-name"
               />
-              {errors.lastName && (
-                <p role="alert" className="error-message">
-                  {errors.lastName}
-                </p>
-              )}
+              <p aria-live="polite" className={`error-message ${errors.lastName ? "visible" : ""}`}>
+                  {errors.lastName || " "}
+              </p>
             </div>
 
             {/* email */}
@@ -140,11 +139,11 @@ export default function ContactForm({onSuccess}) {
                 onBlur={handleBlur}
                 autoComplete="email"
               />
-              {errors.email && (
-                <p role="alert" className="error-message">
-                  {errors.email}
-                </p>
-              )}
+              
+
+              <p aria-live="polite" className={`error-message ${errors.email ? "visible" : ""}`}>
+                  {errors.email || " "}
+              </p>
             </div>
 
             {/* query type */}
@@ -191,11 +190,10 @@ export default function ContactForm({onSuccess}) {
                 </div>
               </section>
 
-              {errors.queryType && (
-                <p role="alert" className="error-message">
-                  {errors.queryType}
-                </p>
-              )}
+
+              <p aria-live="polite" className={`error-message ${errors.queryType ? "visible" : ""}`}>
+                  {errors.queryType || " "}
+              </p>
             </fieldset>
 
             {/* message */}
@@ -217,11 +215,10 @@ export default function ContactForm({onSuccess}) {
                 id="message"
                 rows="4"
               ></textarea>
-              {errors.message && (
-                <p role="alert" className="error-message">
-                  {errors.message}
-                </p>
-              )}
+
+              <p aria-live="polite" className={`error-message ${errors.message ? "visible" : ""}`}>
+                  {errors.message || " "}
+              </p>
             </div>
           </section>
         </section>
@@ -245,11 +242,10 @@ export default function ContactForm({onSuccess}) {
               *
             </span>
           </label>
-          {errors.consent && (
-            <p role="alert" className="error-message">
-              {errors.consent}
-            </p>
-          )}
+
+          <p aria-live="polite" className={`error-message ${errors.consent ? "visible" : ""}`}>
+                {errors.consent || " "}
+          </p>
         </section>
 
         <button type="submit">Submit</button>
