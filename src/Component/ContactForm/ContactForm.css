@@ -22,7 +22,15 @@
 
 .error-message {
   color: var(--color-text-error);
+  min-height: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
+
+.error-message.visible {
+  opacity: 1;
+}
+
 
 input,
 textarea {
@@ -98,8 +106,8 @@ button:focus-visible {
   margin-inline-start: var(--space-150);
 }
 
-.checkbox * + * {
-  margin-inline-start: var(--space-150);
+.checkbox input {
+  margin-inline-end: var(--space-150);
 }
 
 textarea {
